@@ -1,0 +1,168 @@
+.home{
+  width: 900px;
+  height: 500px;
+  border:black 1px solid;
+  margin: 70px auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-content: center;
+  align-items: center;
+  box-shadow: 0 10px 10px 10px #949494;
+
+  .one{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+
+    &:first-child::after{
+      position: absolute;
+      content: url("src/static/images/appzombie.png");
+      display: block;
+      top: 13px;
+      animation: animate1 25s 0s linear infinite;
+      animation-delay: 3s;
+    }
+
+    div{
+      width: 100px;
+      &:nth-of-type(2n)
+      {
+        background:#248F12;
+      }
+
+      &:nth-of-type(2n-1)
+      {
+        background:#2BA512;
+      }
+    }
+  }
+  .two{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #30BD18;
+    position: relative;
+
+    &:first-child::after{
+      position: absolute;
+      content: url("src/static/images/appzombie.png");
+      display: block;
+      top: 13px;
+      animation: animate1 25s 2s linear infinite;
+      animation-delay: 2s;
+    }
+
+    div{
+      width: 100px;
+      &:nth-of-type(2n)
+      {
+        background:transparent;
+      }
+
+      &:nth-of-type(2n-1)
+      {
+        background:#248F12;
+      }
+    }
+  }
+  .three{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #19620C;
+    position: relative;
+
+    &:first-child::after{
+      position: absolute;
+      content: url("src/static/images/appzombie.png");
+      display: block;
+      top: 13px;
+      animation: animate1 25s 2s linear infinite;
+      animation-delay: 2s;
+    }
+
+    div{
+      width: 100px;
+      &:nth-of-type(2n)
+      {
+        background:#248F12;
+      }
+
+      &:nth-of-type(2n-1)
+      {
+        background:transparent;
+      }
+    }
+  }
+  .four{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #26BD18;
+    position: relative;
+
+    &:last-child::before{
+      position: absolute;
+      z-index: 1000;
+      content: url("src/static/images/appzombie.png");
+      display: block;
+      top: 53px;
+      animation-name: animate1;
+      animation-delay: 2s;
+      animation-duration: 20s;
+    }
+
+    div{
+      width: 100px;
+      &:nth-of-type(2n)
+      {
+        background:transparent;
+      }
+
+      &:nth-of-type(2n-1)
+      {
+        background:#248F12;
+      }
+    }
+  }
+  .five{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #19620C;
+
+    div{
+      width: 100px;
+      &:nth-of-type(2n)
+      {
+        background:#248F12;
+      }
+
+      &:nth-of-type(2n-1)
+      {
+        background:transparent;
+      }
+    }
+  }
+}
+
+@keyframes animate1 {
+  0%{left: 800px}
+  11%{left: 700px}
+  22%{left: 600px}
+  33%{left: 500px}
+  44%{left: 400px}
+  55%{left: 300px}
+  66%{left: 200px}
+  77%{left: 100px}
+  88%{left: 000px}
+  99%{left: 900px}
+}
